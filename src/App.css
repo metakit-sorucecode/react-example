@@ -1,0 +1,100 @@
+/* 화면 가운데에 폭을 정해 둔다 */
+#root {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+h1 {
+  margin: 0 0 8px;
+}
+
+hr {
+  margin: 16px 0;
+}
+
+input,
+button {
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+/* 이름표 + 입력칸 + 버튼을 한 줄에 놓는다 */
+.row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+/* 이름표 폭을 맞춰 입력칸 시작 위치를 줄 세운다 */
+.row > strong,
+.row > label {
+  width: 72px;
+  flex-shrink: 0;
+}
+
+.row input {
+  flex: 1;
+  min-width: 0;
+}
+
+.selected {
+  background-color: black;
+  color: white;
+}
+
+.book-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* 오른쪽에 버튼 자리를 비워 둔다 */
+.book {
+  position: relative;
+  border: 1px solid black;
+  padding: 12px 96px 12px 12px;
+}
+
+.book p {
+  margin: 4px 0 0;
+}
+
+/* 버튼을 카드 오른쪽 가운데에 둔다 */
+.book button {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+}
+
+/* 할 일 목록: 체크박스, 글자, 삭제 버튼을 한 줄에 놓는다 */
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid black;
+  padding: 12px;
+}
+
+.todo-text {
+  flex: 1;
+}
+
+.done {
+  color: gray;
+  text-decoration: line-through;
+}
