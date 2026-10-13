@@ -11,6 +11,7 @@ React 강의에서 쓰는 장별 예제 코드다.
 | 05-component | 5장 | 4장 도서관을 컴포넌트로 나누고 책 추가, 대출 토글, 필터 더하기 (props) |
 | ex1-todo | 실습 1 | 할 일 추가, 완료 토글, 삭제, 필터 |
 | ex2-cart | 실습 2 | 책장에서 책을 골라 장바구니에 담기 (useContext 없이 props로) |
+| 08-router-state | 7, 8장 실습 | 도서관 껍데기 화면에 회원등록 페이지와 회원 목록 더하기 (react-router, React Hook Form) |
 | 12-zustand | 12장 | 도서관 상태를 zustand 스토어로 옮기고 내 페이지 화면 더하기 (react-router) |
 
 ## 실행
@@ -24,7 +25,7 @@ http://localhost:5173 에서 본다.
 보여 줄 예제는 src/App.jsx 의 import 를 바꿔서 고른다.
 
 ```jsx
-import LibraryApp from "./examples/12-zustand/LibraryApp.jsx";
+import LibraryApp from "./examples/08-router-state/LibraryApp.jsx";
 ```
 
 | 폴더 | 시작 컴포넌트 |
@@ -33,6 +34,7 @@ import LibraryApp from "./examples/12-zustand/LibraryApp.jsx";
 | 05-component | Library.jsx |
 | ex1-todo | TodoApp.jsx |
 | ex2-cart | Cart.jsx |
+| 08-router-state | LibraryApp.jsx (학생 시작 파일은 start/App.jsx) |
 | 12-zustand | LibraryApp.jsx |
 
 ## 화면
